@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Mail, MapPin, Pencil, Phone, Trash2, Users } from "lucide-react";
 import axios from "axios";
-import Contact_filter from "../contact-filter/Contact_filter";
-import Contact_form from "../contact-form/Contact_form";
+import Contact_filter from "../contact-filter/contact-filter";
+import Contact_form from "../contact-form/contact-form";
 
 interface contact {
   id: number;

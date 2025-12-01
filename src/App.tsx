@@ -1,6 +1,6 @@
 
 import React from 'react';
-import ContactList from './component/contact-list/contact_list';
+import ContactList from './component/contact-list/contact-list';
 const App = () => {
   return (
     <>

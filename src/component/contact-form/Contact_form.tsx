@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { X, Plus, Mail, Phone, MapPin, User } from "lucide-react";
 
-const ContactForm = ({Contact , setContact , updateContact , setUpdateContact}: any) => {
+const Contact_form = ({Contact , setContact , updateContact , setUpdateContact}: any) => {
 const [Modal , setModal] = useState(false)
 const OpenModal = () => setModal(true)
 const CloseModal = () => setModal(false)
@@ -203,4 +203,4 @@ const handleSubmit = async () => {
   );
 };
 
-export default ContactForm;
+export default Contact_form;

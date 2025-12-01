@@ -7,7 +7,7 @@ interface Props {
   setSelectContact: (v: string) => void;
 }
 
-const ContactFilter = ({ search, setSearch, selectContact, setSelectContact }: Props) => {
+const Contact_filter = ({ search, setSearch, selectContact, setSelectContact }: Props) => {
   return (
     <div className="flex items-center gap-4 my-4">
 
@@ -38,4 +38,4 @@ const ContactFilter = ({ search, setSearch, selectContact, setSelectContact }: P
   );
 };
 
-export default ContactFilter;
+export default Contact_filter;

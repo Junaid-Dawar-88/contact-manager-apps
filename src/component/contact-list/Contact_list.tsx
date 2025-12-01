@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Mail, MapIcon, MapPin, Pencil, Phone, Trash2, Users } from "lucide-react";
-import ContactForm from "../contact-form/ContactForm";
+import ContactForm from "../contact-form/Contact_form";
 import axios from "axios";
-import ContactFilter from "../contact-filter/ContactFilter";
+import ContactFilter from "../contact-filter/Contact_filter";
 
 interface contact {
   id: number;
@@ -12,7 +12,7 @@ interface contact {
   group: string;
   address: string;
 }
-const ContactList = () => {
+const Contact_list = () => {
   const [Contact, setContact] = useState<contact[]>([]);
   const [updateContact, setUpdateContact] = useState<contact | null>(null);
   const [selectContact , setSelectContact] = useState('all')
@@ -177,4 +177,4 @@ const ContactList = () => {
   );
 };
 
-export default ContactList;
+export default Contact_list;

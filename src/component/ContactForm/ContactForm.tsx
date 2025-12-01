@@ -38,6 +38,9 @@ const handleSubmit = async () => {
     if(!name || !email || !phone || !address) return alert('please fill the input fields ')
       if(!email.includes('@')) return alert('email must be include ( @ ) ')
         if(phone.length > 11) return alert('phone number must have 11 character')
+          
+          const dublicat = Contact.some((dub: any) => dub.email === email || dub.phone === phone)
+              if(dublicat) return alert('this email or phone is already exist! ')
             const contactData = {
                name,
                email,

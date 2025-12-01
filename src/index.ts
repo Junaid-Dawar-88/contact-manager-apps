@@ -1,6 +1,6 @@
 import { serve } from "bun";
 import index from './index.html'
-import { ContactRoutes } from "./routes/ContactRoute";
+import { ContactRoutes } from "./routes/contact_route";
 
 const server = serve({
      port: 4000,

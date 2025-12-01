@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Mail, MapIcon, MapPin, Pencil, Phone, Trash2, Users } from "lucide-react";
-import ContactForm from "../contact-form/Contact_form";
+import { Mail, MapPin, Pencil, Phone, Trash2, Users } from "lucide-react";
 import axios from "axios";
-import ContactFilter from "../contact-filter/Contact_filter";
+import Contact_filter from "../contact-filter/Contact_filter";
+import Contact_form from "../contact-form/Contact_form";
 
 interface contact {
   id: number;
@@ -71,7 +71,7 @@ const Contact_list = () => {
 
           {/* ============================== Filter Section =============================== */}
           <div className="mb-6 w-full">
-            <ContactFilter 
+            <Contact_filter 
               search={search} 
               setSearch={setSearch} 
               selectContact={selectContact} 
@@ -81,7 +81,7 @@ const Contact_list = () => {
 
           {/* =============================== Contact Form ================================= */}
           <div className="mb-8 w-full">
-            <ContactForm
+            <Contact_form
               Contact={Contact}
               setContact={setContact}
               updateContact={updateContact}
